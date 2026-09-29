@@ -1,0 +1,47 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cavi-au/Consent-O-Matic/master/rules.schema.json",
+  "name": "Fanboy Cookie Monster - aggressive reject",
+  "description": "Podzielona lista reguł Consent-O-Matic.",
+  "parts": [
+    {
+      "file": "rules-list-01.json",
+      "rules": 960,
+      "size_mb": 14.21
+    },
+    {
+      "file": "rules-list-02.json",
+      "rules": 960,
+      "size_mb": 14.2
+    },
+    {
+      "file": "rules-list-03.json",
+      "rules": 960,
+      "size_mb": 14.19
+    },
+    {
+      "file": "rules-list-04.json",
+      "rules": 960,
+      "size_mb": 16.41
+    },
+    {
+      "file": "rules-list-05.json",
+      "rules": 960,
+      "size_mb": 14.29
+    },
+    {
+      "file": "rules-list-06.json",
+      "rules": 960,
+      "size_mb": 14.22
+    },
+    {
+      "file": "rules-list-07.json",
+      "rules": 960,
+      "size_mb": 14.18
+    },
+    {
+      "file": "rules-list-08.json",
+      "rules": 955,
+      "size_mb": 14.1
+    }
+  ]
+}
