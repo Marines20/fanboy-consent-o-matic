@@ -1,0 +1,3528 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cavi-au/Consent-O-Matic/master/rules.schema.json",
+  "EasyList 3P CMP - OneTrust - 001": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "#onetrust-banner-sdk, #onetrust-consent-sdk, [id*=\"onetrust\"], [class*=\"onetrust\"]"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "#onetrust-banner-sdk, #onetrust-consent-sdk, [id*=\"onetrust\"], [class*=\"onetrust\"]"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+            "textFilter": [
+              "Save preferences",
+              "Save settings",
+              "Save choices",
+              "Save",
+              "Confirm choices",
+              "Confirm selection",
+              "Confirm",
+              "Apply choices",
+              "Apply",
+              "Done",
+              "Finish",
+              "Zapisz preferencje",
+              "Zapisz ustawienia",
+              "Zapisz wybór",
+              "Zapisz wybory",
+              "Zapisz",
+              "Potwierdź wybór",
+              "Potwierdź wybory",
+              "Potwierdź",
+              "Zastosuj",
+              "Gotowe",
+              "Zakończ",
+              "Speichern",
+              "Einstellungen speichern",
+              "Auswahl bestätigen",
+              "Guardar preferencias",
+              "Guardar configuración",
+              "Confirmar selección",
+              "Guardar",
+              "Salva preferenze",
+              "Salva impostazioni",
+              "Conferma selezione",
+              "Salva"
+            ],
+            "displayFilter": true,
+            "openInTab": false
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "EasyList 3P CMP - Cookiebot - 002": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "#CybotCookiebotDialog, [id*=\"CybotCookiebot\"], [class*=\"CybotCookiebot\"]"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "#CybotCookiebotDialog, [id*=\"CybotCookiebot\"], [class*=\"CybotCookiebot\"]"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+            "textFilter": [
+              "Save preferences",
+              "Save settings",
+              "Save choices",
+              "Save",
+              "Confirm choices",
+              "Confirm selection",
+              "Confirm",
+              "Apply choices",
+              "Apply",
+              "Done",
+              "Finish",
+              "Zapisz preferencje",
+              "Zapisz ustawienia",
+              "Zapisz wybór",
+              "Zapisz wybory",
+              "Zapisz",
+              "Potwierdź wybór",
+              "Potwierdź wybory",
+              "Potwierdź",
+              "Zastosuj",
+              "Gotowe",
+              "Zakończ",
+              "Speichern",
+              "Einstellungen speichern",
+              "Auswahl bestätigen",
+              "Guardar preferencias",
+              "Guardar configuración",
+              "Confirmar selección",
+              "Guardar",
+              "Salva preferenze",
+              "Salva impostazioni",
+              "Conferma selezione",
+              "Salva"
+            ],
+            "displayFilter": true,
+            "openInTab": false
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "EasyList 3P CMP - Quantcast - 003": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "#qc-cmp2-container, [id*=\"qc-cmp2\"], [class*=\"qc-cmp2\"]"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "#qc-cmp2-container, [id*=\"qc-cmp2\"], [class*=\"qc-cmp2\"]"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+            "textFilter": [
+              "Save preferences",
+              "Save settings",
+              "Save choices",
+              "Save",
+              "Confirm choices",
+              "Confirm selection",
+              "Confirm",
+              "Apply choices",
+              "Apply",
+              "Done",
+              "Finish",
+              "Zapisz preferencje",
+              "Zapisz ustawienia",
+              "Zapisz wybór",
+              "Zapisz wybory",
+              "Zapisz",
+              "Potwierdź wybór",
+              "Potwierdź wybory",
+              "Potwierdź",
+              "Zastosuj",
+              "Gotowe",
+              "Zakończ",
+              "Speichern",
+              "Einstellungen speichern",
+              "Auswahl bestätigen",
+              "Guardar preferencias",
+              "Guardar configuración",
+              "Confirmar selección",
+              "Guardar",
+              "Salva preferenze",
+              "Salva impostazioni",
+              "Conferma selezione",
+              "Salva"
+            ],
+            "displayFilter": true,
+            "openInTab": false
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "EasyList 3P CMP - Usercentrics - 004": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"usercentrics\"], [class*=\"usercentrics\"]"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"usercentrics\"], [class*=\"usercentrics\"]"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+            "textFilter": [
+              "Save preferences",
+              "Save settings",
+              "Save choices",
+              "Save",
+              "Confirm choices",
+              "Confirm selection",
+              "Confirm",
+              "Apply choices",
+              "Apply",
+              "Done",
+              "Finish",
+              "Zapisz preferencje",
+              "Zapisz ustawienia",
+              "Zapisz wybór",
+              "Zapisz wybory",
+              "Zapisz",
+              "Potwierdź wybór",
+              "Potwierdź wybory",
+              "Potwierdź",
+              "Zastosuj",
+              "Gotowe",
+              "Zakończ",
+              "Speichern",
+              "Einstellungen speichern",
+              "Auswahl bestätigen",
+              "Guardar preferencias",
+              "Guardar configuración",
+              "Confirmar selección",
+              "Guardar",
+              "Salva preferenze",
+              "Salva impostazioni",
+              "Conferma selezione",
+              "Salva"
+            ],
+            "displayFilter": true,
+            "openInTab": false
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "EasyList 3P CMP - iubenda - 005": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "#iubenda-cs-banner, [id*=\"iubenda\"], [class*=\"iubenda\"]"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "#iubenda-cs-banner, [id*=\"iubenda\"], [class*=\"iubenda\"]"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+            "textFilter": [
+              "Save preferences",
+              "Save settings",
+              "Save choices",
+              "Save",
+              "Confirm choices",
+              "Confirm selection",
+              "Confirm",
+              "Apply choices",
+              "Apply",
+              "Done",
+              "Finish",
+              "Zapisz preferencje",
+              "Zapisz ustawienia",
+              "Zapisz wybór",
+              "Zapisz wybory",
+              "Zapisz",
+              "Potwierdź wybór",
+              "Potwierdź wybory",
+              "Potwierdź",
+              "Zastosuj",
+              "Gotowe",
+              "Zakończ",
+              "Speichern",
+              "Einstellungen speichern",
+              "Auswahl bestätigen",
+              "Guardar preferencias",
+              "Guardar configuración",
+              "Confirmar selección",
+              "Guardar",
+              "Salva preferenze",
+              "Salva impostazioni",
+              "Conferma selezione",
+              "Salva"
+            ],
+            "displayFilter": true,
+            "openInTab": false
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "EasyList 3P CMP - TrustArc - 006": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"truste\"], [id*=\"trustarc\"], [class*=\"truste\"], [class*=\"trustarc\"]"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"truste\"], [id*=\"trustarc\"], [class*=\"truste\"], [class*=\"trustarc\"]"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+            "textFilter": [
+              "Save preferences",
+              "Save settings",
+              "Save choices",
+              "Save",
+              "Confirm choices",
+              "Confirm selection",
+              "Confirm",
+              "Apply choices",
+              "Apply",
+              "Done",
+              "Finish",
+              "Zapisz preferencje",
+              "Zapisz ustawienia",
+              "Zapisz wybór",
+              "Zapisz wybory",
+              "Zapisz",
+              "Potwierdź wybór",
+              "Potwierdź wybory",
+              "Potwierdź",
+              "Zastosuj",
+              "Gotowe",
+              "Zakończ",
+              "Speichern",
+              "Einstellungen speichern",
+              "Auswahl bestätigen",
+              "Guardar preferencias",
+              "Guardar configuración",
+              "Confirmar selección",
+              "Guardar",
+              "Salva preferenze",
+              "Salva impostazioni",
+              "Conferma selezione",
+              "Salva"
+            ],
+            "displayFilter": true,
+            "openInTab": false
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "EasyList 3P CMP - Termly - 007": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"termly\"], [class*=\"termly\"]"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"termly\"], [class*=\"termly\"]"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+            "textFilter": [
+              "Save preferences",
+              "Save settings",
+              "Save choices",
+              "Save",
+              "Confirm choices",
+              "Confirm selection",
+              "Confirm",
+              "Apply choices",
+              "Apply",
+              "Done",
+              "Finish",
+              "Zapisz preferencje",
+              "Zapisz ustawienia",
+              "Zapisz wybór",
+              "Zapisz wybory",
+              "Zapisz",
+              "Potwierdź wybór",
+              "Potwierdź wybory",
+              "Potwierdź",
+              "Zastosuj",
+              "Gotowe",
+              "Zakończ",
+              "Speichern",
+              "Einstellungen speichern",
+              "Auswahl bestätigen",
+              "Guardar preferencias",
+              "Guardar configuración",
+              "Confirmar selección",
+              "Guardar",
+              "Salva preferenze",
+              "Salva impostazioni",
+              "Conferma selezione",
+              "Salva"
+            ],
+            "displayFilter": true,
+            "openInTab": false
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "EasyList 3P CMP - CookieYes - 008": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"cookieyes\"], [class*=\"cookieyes\"]"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"cookieyes\"], [class*=\"cookieyes\"]"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+            "textFilter": [
+              "Save preferences",
+              "Save settings",
+              "Save choices",
+              "Save",
+              "Confirm choices",
+              "Confirm selection",
+              "Confirm",
+              "Apply choices",
+              "Apply",
+              "Done",
+              "Finish",
+              "Zapisz preferencje",
+              "Zapisz ustawienia",
+              "Zapisz wybór",
+              "Zapisz wybory",
+              "Zapisz",
+              "Potwierdź wybór",
+              "Potwierdź wybory",
+              "Potwierdź",
+              "Zastosuj",
+              "Gotowe",
+              "Zakończ",
+              "Speichern",
+              "Einstellungen speichern",
+              "Auswahl bestätigen",
+              "Guardar preferencias",
+              "Guardar configuración",
+              "Confirmar selección",
+              "Guardar",
+              "Salva preferenze",
+              "Salva impostazioni",
+              "Conferma selezione",
+              "Salva"
+            ],
+            "displayFilter": true,
+            "openInTab": false
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "EasyList 3P CMP - CookieHub - 009": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"cookiehub\"], [class*=\"cookiehub\"]"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"cookiehub\"], [class*=\"cookiehub\"]"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+            "textFilter": [
+              "Save preferences",
+              "Save settings",
+              "Save choices",
+              "Save",
+              "Confirm choices",
+              "Confirm selection",
+              "Confirm",
+              "Apply choices",
+              "Apply",
+              "Done",
+              "Finish",
+              "Zapisz preferencje",
+              "Zapisz ustawienia",
+              "Zapisz wybór",
+              "Zapisz wybory",
+              "Zapisz",
+              "Potwierdź wybór",
+              "Potwierdź wybory",
+              "Potwierdź",
+              "Zastosuj",
+              "Gotowe",
+              "Zakończ",
+              "Speichern",
+              "Einstellungen speichern",
+              "Auswahl bestätigen",
+              "Guardar preferencias",
+              "Guardar configuración",
+              "Confirmar selección",
+              "Guardar",
+              "Salva preferenze",
+              "Salva impostazioni",
+              "Conferma selezione",
+              "Salva"
+            ],
+            "displayFilter": true,
+            "openInTab": false
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "EasyList 3P CMP - Cookie_Information - 010": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"cookieinformation\"], [class*=\"cookieinformation\"]"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"cookieinformation\"], [class*=\"cookieinformation\"]"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+            "textFilter": [
+              "Save preferences",
+              "Save settings",
+              "Save choices",
+              "Save",
+              "Confirm choices",
+              "Confirm selection",
+              "Confirm",
+              "Apply choices",
+              "Apply",
+              "Done",
+              "Finish",
+              "Zapisz preferencje",
+              "Zapisz ustawienia",
+              "Zapisz wybór",
+              "Zapisz wybory",
+              "Zapisz",
+              "Potwierdź wybór",
+              "Potwierdź wybory",
+              "Potwierdź",
+              "Zastosuj",
+              "Gotowe",
+              "Zakończ",
+              "Speichern",
+              "Einstellungen speichern",
+              "Auswahl bestätigen",
+              "Guardar preferencias",
+              "Guardar configuración",
+              "Confirmar selección",
+              "Guardar",
+              "Salva preferenze",
+              "Salva impostazioni",
+              "Conferma selezione",
+              "Salva"
+            ],
+            "displayFilter": true,
+            "openInTab": false
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "EasyList 3P CMP - CookieFirst - 011": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"cookiefirst\"], [class*=\"cookiefirst\"]"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"cookiefirst\"], [class*=\"cookiefirst\"]"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+            "textFilter": [
+              "Save preferences",
+              "Save settings",
+              "Save choices",
+              "Save",
+              "Confirm choices",
+              "Confirm selection",
+              "Confirm",
+              "Apply choices",
+              "Apply",
+              "Done",
+              "Finish",
+              "Zapisz preferencje",
+              "Zapisz ustawienia",
+              "Zapisz wybór",
+              "Zapisz wybory",
+              "Zapisz",
+              "Potwierdź wybór",
+              "Potwierdź wybory",
+              "Potwierdź",
+              "Zastosuj",
+              "Gotowe",
+              "Zakończ",
+              "Speichern",
+              "Einstellungen speichern",
+              "Auswahl bestätigen",
+              "Guardar preferencias",
+              "Guardar configuración",
+              "Confirmar selección",
+              "Guardar",
+              "Salva preferenze",
+              "Salva impostazioni",
+              "Conferma selezione",
+              "Salva"
+            ],
+            "displayFilter": true,
+            "openInTab": false
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "EasyList 3P CMP - CookieConsent - 012": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"cookieconsent\"], [class*=\"cookieconsent\"]"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"cookieconsent\"], [class*=\"cookieconsent\"]"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+            "textFilter": [
+              "Save preferences",
+              "Save settings",
+              "Save choices",
+              "Save",
+              "Confirm choices",
+              "Confirm selection",
+              "Confirm",
+              "Apply choices",
+              "Apply",
+              "Done",
+              "Finish",
+              "Zapisz preferencje",
+              "Zapisz ustawienia",
+              "Zapisz wybór",
+              "Zapisz wybory",
+              "Zapisz",
+              "Potwierdź wybór",
+              "Potwierdź wybory",
+              "Potwierdź",
+              "Zastosuj",
+              "Gotowe",
+              "Zakończ",
+              "Speichern",
+              "Einstellungen speichern",
+              "Auswahl bestätigen",
+              "Guardar preferencias",
+              "Guardar configuración",
+              "Confirmar selección",
+              "Guardar",
+              "Salva preferenze",
+              "Salva impostazioni",
+              "Conferma selezione",
+              "Salva"
+            ],
+            "displayFilter": true,
+            "openInTab": false
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "EasyList 3P CMP - Consentmanager - 013": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"cmpwrapper\"], [id*=\"consentmanager\"], [class*=\"consentmanager\"]"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"cmpwrapper\"], [id*=\"consentmanager\"], [class*=\"consentmanager\"]"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+            "textFilter": [
+              "Save preferences",
+              "Save settings",
+              "Save choices",
+              "Save",
+              "Confirm choices",
+              "Confirm selection",
+              "Confirm",
+              "Apply choices",
+              "Apply",
+              "Done",
+              "Finish",
+              "Zapisz preferencje",
+              "Zapisz ustawienia",
+              "Zapisz wybór",
+              "Zapisz wybory",
+              "Zapisz",
+              "Potwierdź wybór",
+              "Potwierdź wybory",
+              "Potwierdź",
+              "Zastosuj",
+              "Gotowe",
+              "Zakończ",
+              "Speichern",
+              "Einstellungen speichern",
+              "Auswahl bestätigen",
+              "Guardar preferencias",
+              "Guardar configuración",
+              "Confirmar selección",
+              "Guardar",
+              "Salva preferenze",
+              "Salva impostazioni",
+              "Conferma selezione",
+              "Salva"
+            ],
+            "displayFilter": true,
+            "openInTab": false
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "EasyList 3P CMP - Consentik - 014": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"consentik\"], [class*=\"consentik\"]"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"consentik\"], [class*=\"consentik\"]"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+            "textFilter": [
+              "Save preferences",
+              "Save settings",
+              "Save choices",
+              "Save",
+              "Confirm choices",
+              "Confirm selection",
+              "Confirm",
+              "Apply choices",
+              "Apply",
+              "Done",
+              "Finish",
+              "Zapisz preferencje",
+              "Zapisz ustawienia",
+              "Zapisz wybór",
+              "Zapisz wybory",
+              "Zapisz",
+              "Potwierdź wybór",
+              "Potwierdź wybory",
+              "Potwierdź",
+              "Zastosuj",
+              "Gotowe",
+              "Zakończ",
+              "Speichern",
+              "Einstellungen speichern",
+              "Auswahl bestätigen",
+              "Guardar preferencias",
+              "Guardar configuración",
+              "Confirmar selección",
+              "Guardar",
+              "Salva preferenze",
+              "Salva impostazioni",
+              "Conferma selezione",
+              "Salva"
+            ],
+            "displayFilter": true,
+            "openInTab": false
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "EasyList 3P CMP - Clym - 015": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"clym\"], [class*=\"clym\"]"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"clym\"], [class*=\"clym\"]"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+            "textFilter": [
+              "Save preferences",
+              "Save settings",
+              "Save choices",
+              "Save",
+              "Confirm choices",
+              "Confirm selection",
+              "Confirm",
+              "Apply choices",
+              "Apply",
+              "Done",
+              "Finish",
+              "Zapisz preferencje",
+              "Zapisz ustawienia",
+              "Zapisz wybór",
+              "Zapisz wybory",
+              "Zapisz",
+              "Potwierdź wybór",
+              "Potwierdź wybory",
+              "Potwierdź",
+              "Zastosuj",
+              "Gotowe",
+              "Zakończ",
+              "Speichern",
+              "Einstellungen speichern",
+              "Auswahl bestätigen",
+              "Guardar preferencias",
+              "Guardar configuración",
+              "Confirmar selección",
+              "Guardar",
+              "Salva preferenze",
+              "Salva impostazioni",
+              "Conferma selezione",
+              "Salva"
+            ],
+            "displayFilter": true,
+            "openInTab": false
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "EasyList 3P CMP - Sourcepoint - 016": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"sp_message\"], [class*=\"sp_message\"]"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"sp_message\"], [class*=\"sp_message\"]"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+            "textFilter": [
+              "Save preferences",
+              "Save settings",
+              "Save choices",
+              "Save",
+              "Confirm choices",
+              "Confirm selection",
+              "Confirm",
+              "Apply choices",
+              "Apply",
+              "Done",
+              "Finish",
+              "Zapisz preferencje",
+              "Zapisz ustawienia",
+              "Zapisz wybór",
+              "Zapisz wybory",
+              "Zapisz",
+              "Potwierdź wybór",
+              "Potwierdź wybory",
+              "Potwierdź",
+              "Zastosuj",
+              "Gotowe",
+              "Zakończ",
+              "Speichern",
+              "Einstellungen speichern",
+              "Auswahl bestätigen",
+              "Guardar preferencias",
+              "Guardar configuración",
+              "Confirmar selección",
+              "Guardar",
+              "Salva preferenze",
+              "Salva impostazioni",
+              "Conferma selezione",
+              "Salva"
+            ],
+            "displayFilter": true,
+            "openInTab": false
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "EasyList 3P CMP - Transcend - 017": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"transcend\"], [class*=\"transcend\"]"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"transcend\"], [class*=\"transcend\"]"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+            "textFilter": [
+              "Save preferences",
+              "Save settings",
+              "Save choices",
+              "Save",
+              "Confirm choices",
+              "Confirm selection",
+              "Confirm",
+              "Apply choices",
+              "Apply",
+              "Done",
+              "Finish",
+              "Zapisz preferencje",
+              "Zapisz ustawienia",
+              "Zapisz wybór",
+              "Zapisz wybory",
+              "Zapisz",
+              "Potwierdź wybór",
+              "Potwierdź wybory",
+              "Potwierdź",
+              "Zastosuj",
+              "Gotowe",
+              "Zakończ",
+              "Speichern",
+              "Einstellungen speichern",
+              "Auswahl bestätigen",
+              "Guardar preferencias",
+              "Guardar configuración",
+              "Confirmar selección",
+              "Guardar",
+              "Salva preferenze",
+              "Salva impostazioni",
+              "Conferma selezione",
+              "Salva"
+            ],
+            "displayFilter": true,
+            "openInTab": false
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "EasyList 3P CMP - Securiti - 018": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"securiti\"], [class*=\"securiti\"]"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"securiti\"], [class*=\"securiti\"]"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+            "textFilter": [
+              "Save preferences",
+              "Save settings",
+              "Save choices",
+              "Save",
+              "Confirm choices",
+              "Confirm selection",
+              "Confirm",
+              "Apply choices",
+              "Apply",
+              "Done",
+              "Finish",
+              "Zapisz preferencje",
+              "Zapisz ustawienia",
+              "Zapisz wybór",
+              "Zapisz wybory",
+              "Zapisz",
+              "Potwierdź wybór",
+              "Potwierdź wybory",
+              "Potwierdź",
+              "Zastosuj",
+              "Gotowe",
+              "Zakończ",
+              "Speichern",
+              "Einstellungen speichern",
+              "Auswahl bestätigen",
+              "Guardar preferencias",
+              "Guardar configuración",
+              "Confirmar selección",
+              "Guardar",
+              "Salva preferenze",
+              "Salva impostazioni",
+              "Conferma selezione",
+              "Salva"
+            ],
+            "displayFilter": true,
+            "openInTab": false
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "EasyList 3P CMP - Ketch - 019": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"ketch\"], [class*=\"ketch\"]"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"ketch\"], [class*=\"ketch\"]"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+            "textFilter": [
+              "Save preferences",
+              "Save settings",
+              "Save choices",
+              "Save",
+              "Confirm choices",
+              "Confirm selection",
+              "Confirm",
+              "Apply choices",
+              "Apply",
+              "Done",
+              "Finish",
+              "Zapisz preferencje",
+              "Zapisz ustawienia",
+              "Zapisz wybór",
+              "Zapisz wybory",
+              "Zapisz",
+              "Potwierdź wybór",
+              "Potwierdź wybory",
+              "Potwierdź",
+              "Zastosuj",
+              "Gotowe",
+              "Zakończ",
+              "Speichern",
+              "Einstellungen speichern",
+              "Auswahl bestätigen",
+              "Guardar preferencias",
+              "Guardar configuración",
+              "Confirmar selección",
+              "Guardar",
+              "Salva preferenze",
+              "Salva impostazioni",
+              "Conferma selezione",
+              "Salva"
+            ],
+            "displayFilter": true,
+            "openInTab": false
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "EasyList 3P CMP - Axeptio - 020": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "#axeptio_main, [id*=\"axeptio\"], [class*=\"axeptio\"]"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "#axeptio_main, [id*=\"axeptio\"], [class*=\"axeptio\"]"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+            "textFilter": [
+              "Save preferences",
+              "Save settings",
+              "Save choices",
+              "Save",
+              "Confirm choices",
+              "Confirm selection",
+              "Confirm",
+              "Apply choices",
+              "Apply",
+              "Done",
+              "Finish",
+              "Zapisz preferencje",
+              "Zapisz ustawienia",
+              "Zapisz wybór",
+              "Zapisz wybory",
+              "Zapisz",
+              "Potwierdź wybór",
+              "Potwierdź wybory",
+              "Potwierdź",
+              "Zastosuj",
+              "Gotowe",
+              "Zakończ",
+              "Speichern",
+              "Einstellungen speichern",
+              "Auswahl bestätigen",
+              "Guardar preferencias",
+              "Guardar configuración",
+              "Confirmar selección",
+              "Guardar",
+              "Salva preferenze",
+              "Salva impostazioni",
+              "Conferma selezione",
+              "Salva"
+            ],
+            "displayFilter": true,
+            "openInTab": false
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "EasyList 3P CMP - Civic_CookieControl - 021": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"ccc\"], [class*=\"ccc\"], [id*=\"cookieControl\"], [class*=\"cookieControl\"]"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"ccc\"], [class*=\"ccc\"], [id*=\"cookieControl\"], [class*=\"cookieControl\"]"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+            "textFilter": [
+              "Save preferences",
+              "Save settings",
+              "Save choices",
+              "Save",
+              "Confirm choices",
+              "Confirm selection",
+              "Confirm",
+              "Apply choices",
+              "Apply",
+              "Done",
+              "Finish",
+              "Zapisz preferencje",
+              "Zapisz ustawienia",
+              "Zapisz wybór",
+              "Zapisz wybory",
+              "Zapisz",
+              "Potwierdź wybór",
+              "Potwierdź wybory",
+              "Potwierdź",
+              "Zastosuj",
+              "Gotowe",
+              "Zakończ",
+              "Speichern",
+              "Einstellungen speichern",
+              "Auswahl bestätigen",
+              "Guardar preferencias",
+              "Guardar configuración",
+              "Confirmar selección",
+              "Guardar",
+              "Salva preferenze",
+              "Salva impostazioni",
+              "Conferma selezione",
+              "Salva"
+            ],
+            "displayFilter": true,
+            "openInTab": false
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "EasyList 3P CMP - Evidon - 022": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"evidon\"], [class*=\"evidon\"]"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"evidon\"], [class*=\"evidon\"]"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+            "textFilter": [
+              "Save preferences",
+              "Save settings",
+              "Save choices",
+              "Save",
+              "Confirm choices",
+              "Confirm selection",
+              "Confirm",
+              "Apply choices",
+              "Apply",
+              "Done",
+              "Finish",
+              "Zapisz preferencje",
+              "Zapisz ustawienia",
+              "Zapisz wybór",
+              "Zapisz wybory",
+              "Zapisz",
+              "Potwierdź wybór",
+              "Potwierdź wybory",
+              "Potwierdź",
+              "Zastosuj",
+              "Gotowe",
+              "Zakończ",
+              "Speichern",
+              "Einstellungen speichern",
+              "Auswahl bestätigen",
+              "Guardar preferencias",
+              "Guardar configuración",
+              "Confirmar selección",
+              "Guardar",
+              "Salva preferenze",
+              "Salva impostazioni",
+              "Conferma selezione",
+              "Salva"
+            ],
+            "displayFilter": true,
+            "openInTab": false
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "EasyList 3P CMP - Complianz - 023": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"cmplz\"], [class*=\"cmplz\"]"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"cmplz\"], [class*=\"cmplz\"]"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+            "textFilter": [
+              "Save preferences",
+              "Save settings",
+              "Save choices",
+              "Save",
+              "Confirm choices",
+              "Confirm selection",
+              "Confirm",
+              "Apply choices",
+              "Apply",
+              "Done",
+              "Finish",
+              "Zapisz preferencje",
+              "Zapisz ustawienia",
+              "Zapisz wybór",
+              "Zapisz wybory",
+              "Zapisz",
+              "Potwierdź wybór",
+              "Potwierdź wybory",
+              "Potwierdź",
+              "Zastosuj",
+              "Gotowe",
+              "Zakończ",
+              "Speichern",
+              "Einstellungen speichern",
+              "Auswahl bestätigen",
+              "Guardar preferencias",
+              "Guardar configuración",
+              "Confirmar selección",
+              "Guardar",
+              "Salva preferenze",
+              "Salva impostazioni",
+              "Conferma selezione",
+              "Salva"
+            ],
+            "displayFilter": true,
+            "openInTab": false
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "EasyList 3P CMP - Cookie_Script - 024": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"cookiescript\"], [class*=\"cookiescript\"]"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"cookiescript\"], [class*=\"cookiescript\"]"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+            "textFilter": [
+              "Save preferences",
+              "Save settings",
+              "Save choices",
+              "Save",
+              "Confirm choices",
+              "Confirm selection",
+              "Confirm",
+              "Apply choices",
+              "Apply",
+              "Done",
+              "Finish",
+              "Zapisz preferencje",
+              "Zapisz ustawienia",
+              "Zapisz wybór",
+              "Zapisz wybory",
+              "Zapisz",
+              "Potwierdź wybór",
+              "Potwierdź wybory",
+              "Potwierdź",
+              "Zastosuj",
+              "Gotowe",
+              "Zakończ",
+              "Speichern",
+              "Einstellungen speichern",
+              "Auswahl bestätigen",
+              "Guardar preferencias",
+              "Guardar configuración",
+              "Confirmar selección",
+              "Guardar",
+              "Salva preferenze",
+              "Salva impostazioni",
+              "Conferma selezione",
+              "Salva"
+            ],
+            "displayFilter": true,
+            "openInTab": false
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "EasyList 3P CMP - Cookie_Control - 025": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"cookie\"], [class*=\"cookie\"]"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"cookie\"], [class*=\"cookie\"]"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+            "textFilter": [
+              "Save preferences",
+              "Save settings",
+              "Save choices",
+              "Save",
+              "Confirm choices",
+              "Confirm selection",
+              "Confirm",
+              "Apply choices",
+              "Apply",
+              "Done",
+              "Finish",
+              "Zapisz preferencje",
+              "Zapisz ustawienia",
+              "Zapisz wybór",
+              "Zapisz wybory",
+              "Zapisz",
+              "Potwierdź wybór",
+              "Potwierdź wybory",
+              "Potwierdź",
+              "Zastosuj",
+              "Gotowe",
+              "Zakończ",
+              "Speichern",
+              "Einstellungen speichern",
+              "Auswahl bestätigen",
+              "Guardar preferencias",
+              "Guardar configuración",
+              "Confirmar selección",
+              "Guardar",
+              "Salva preferenze",
+              "Salva impostazioni",
+              "Conferma selezione",
+              "Salva"
+            ],
+            "displayFilter": true,
+            "openInTab": false
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  }
+}
