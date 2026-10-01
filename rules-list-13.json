@@ -1,0 +1,579 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cavi-au/Consent-O-Matic/master/rules.schema.json",
+  "Allegro RODO consent": {
+    "detectors": [
+      {
+        "presentMatcher": {
+          "type": "url",
+          "url": [
+            "^https?://(?:www\\.)?allegro\\.pl(?:/|$)"
+          ],
+          "regexp": true
+        },
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "#opbox-rodo-consent-modal"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "parent": {
+                  "selector": "#opbox-rodo-consent-modal"
+                },
+                "target": {
+                  "selector": "button, [role='button'], input[type='button'], input[type='submit']",
+                  "textFilter": [
+                    "Odrzuć",
+                    "Odmów",
+                    "Reject",
+                    "Decline",
+                    "Deny",
+                    "Refuse",
+                    "Disallow",
+                    "No, thanks"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "parent": {
+            "selector": "#opbox-rodo-consent-modal"
+          },
+          "target": {
+            "selector": "button, [role='button'], input[type='button'], input[type='submit']",
+            "textFilter": [
+              "Zapisz",
+              "Potwierdź",
+              "Zatwierdź",
+              "Save",
+              "Confirm",
+              "Apply",
+              "Done"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "Gazeta.pl RODO Guard": {
+    "detectors": [
+      {
+        "presentMatcher": {
+          "type": "url",
+          "url": [
+            "^https?://(?:www\\.)?gazeta\\.pl(?:/|$)"
+          ],
+          "regexp": true
+        },
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "[id*='rodo'], [class*='rodo'], [id*='cookie'], [class*='cookie']"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "parent": {
+                  "selector": "[role='dialog'], [aria-modal='true'], .modal"
+                },
+                "target": {
+                  "selector": "button, [role='button'], input[type='button'], input[type='submit']",
+                  "textFilter": [
+                    "Odrzuć",
+                    "Odmów",
+                    "Reject",
+                    "Decline",
+                    "Deny",
+                    "Refuse",
+                    "Disallow",
+                    "No, thanks"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "parent": {
+            "selector": "[role='dialog'], [aria-modal='true'], .modal"
+          },
+          "target": {
+            "selector": "button, [role='button'], input[type='button'], input[type='submit']",
+            "textFilter": [
+              "Zapisz",
+              "Potwierdź",
+              "Zatwierdź",
+              "Save",
+              "Confirm",
+              "Apply",
+              "Done"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "Interia privacy consent": {
+    "detectors": [
+      {
+        "presentMatcher": {
+          "type": "url",
+          "url": [
+            "^https?://(?:www\\.)?interia\\.pl(?:/|$)"
+          ],
+          "regexp": true
+        },
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "iframe[src*='rodo'], iframe[src*='prywatnosc']"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "parent": {
+                  "selector": "[role='dialog'], [aria-modal='true'], .modal"
+                },
+                "target": {
+                  "selector": "button, [role='button'], input[type='button'], input[type='submit']",
+                  "textFilter": [
+                    "Odrzuć",
+                    "Odmów",
+                    "Reject",
+                    "Decline",
+                    "Deny",
+                    "Refuse",
+                    "Disallow",
+                    "No, thanks"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "parent": {
+            "selector": "[role='dialog'], [aria-modal='true'], .modal"
+          },
+          "target": {
+            "selector": "button, [role='button'], input[type='button'], input[type='submit']",
+            "textFilter": [
+              "Zapisz",
+              "Potwierdź",
+              "Zatwierdź",
+              "Save",
+              "Confirm",
+              "Apply",
+              "Done"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "Demotywatory CMP": {
+    "detectors": [
+      {
+        "presentMatcher": {
+          "type": "url",
+          "url": [
+            "^https?://(?:www\\.)?demotywatory\\.pl(?:/|$)"
+          ],
+          "regexp": true
+        },
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "[role='dialog'], [aria-modal='true'], [class*='cookie'], [id*='cookie']"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "parent": {
+                  "selector": "[role='dialog'], [aria-modal='true'], .modal, [class*='cookie'], [id*='cookie']"
+                },
+                "target": {
+                  "selector": "button, [role='button'], input[type='button'], input[type='submit']",
+                  "textFilter": [
+                    "Odrzuć",
+                    "Odmów",
+                    "Reject",
+                    "Decline",
+                    "Deny",
+                    "Refuse",
+                    "Disallow",
+                    "No, thanks"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "parent": {
+            "selector": "[role='dialog'], [aria-modal='true'], .modal, [class*='cookie'], [id*='cookie']"
+          },
+          "target": {
+            "selector": "button, [role='button'], input[type='button'], input[type='submit']",
+            "textFilter": [
+              "Zapisz",
+              "Potwierdź",
+              "Zatwierdź",
+              "Save",
+              "Confirm",
+              "Apply",
+              "Done"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "Rzeczpospolita CMP": {
+    "detectors": [
+      {
+        "presentMatcher": {
+          "type": "url",
+          "url": [
+            "^https?://(?:www\\.)?rp\\.pl(?:/|$)"
+          ],
+          "regexp": true
+        },
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "[role='dialog'], [aria-modal='true'], [class*='cmp'], [id*='cmp']"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "parent": {
+                  "selector": "[role='dialog'], [aria-modal='true'], .modal, [class*='cmp'], [id*='cmp']"
+                },
+                "target": {
+                  "selector": "button, [role='button'], input[type='button'], input[type='submit']",
+                  "textFilter": [
+                    "Odrzuć",
+                    "Odmów",
+                    "Reject",
+                    "Decline",
+                    "Deny",
+                    "Refuse",
+                    "Disallow",
+                    "No, thanks"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "parent": {
+            "selector": "[role='dialog'], [aria-modal='true'], .modal, [class*='cmp'], [id*='cmp']"
+          },
+          "target": {
+            "selector": "button, [role='button'], input[type='button'], input[type='submit']",
+            "textFilter": [
+              "Zapisz",
+              "Potwierdź",
+              "Zatwierdź",
+              "Save",
+              "Confirm",
+              "Apply",
+              "Done"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "Fakt cookies": {
+    "detectors": [
+      {
+        "presentMatcher": {
+          "type": "url",
+          "url": [
+            "^https?://(?:www\\.)?fakt\\.pl(?:/|$)"
+          ],
+          "regexp": true
+        },
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "[role='dialog'], [aria-modal='true'], [class*='cookie'], [id*='cookie']"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "parent": {
+                  "selector": "[role='dialog'], [aria-modal='true'], .modal, [class*='cookie'], [id*='cookie']"
+                },
+                "target": {
+                  "selector": "button, [role='button'], input[type='button'], input[type='submit']",
+                  "textFilter": [
+                    "Odrzuć",
+                    "Odmów",
+                    "Reject",
+                    "Decline",
+                    "Deny",
+                    "Refuse",
+                    "Disallow",
+                    "No, thanks"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "parent": {
+            "selector": "[role='dialog'], [aria-modal='true'], .modal, [class*='cookie'], [id*='cookie']"
+          },
+          "target": {
+            "selector": "button, [role='button'], input[type='button'], input[type='submit']",
+            "textFilter": [
+              "Zapisz",
+              "Potwierdź",
+              "Zatwierdź",
+              "Save",
+              "Confirm",
+              "Apply",
+              "Done"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "Forbes.pl cookies": {
+    "detectors": [
+      {
+        "presentMatcher": {
+          "type": "url",
+          "url": [
+            "^https?://(?:www\\.)?forbes\\.pl(?:/|$)"
+          ],
+          "regexp": true
+        },
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "[role='dialog'], [aria-modal='true'], [class*='cookie'], [id*='cookie']"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "parent": {
+                  "selector": "[role='dialog'], [aria-modal='true'], .modal, [class*='cookie'], [id*='cookie']"
+                },
+                "target": {
+                  "selector": "button, [role='button'], input[type='button'], input[type='submit']",
+                  "textFilter": [
+                    "Odrzuć",
+                    "Odmów",
+                    "Reject",
+                    "Decline",
+                    "Deny",
+                    "Refuse",
+                    "Disallow",
+                    "No, thanks"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "parent": {
+            "selector": "[role='dialog'], [aria-modal='true'], .modal, [class*='cookie'], [id*='cookie']"
+          },
+          "target": {
+            "selector": "button, [role='button'], input[type='button'], input[type='submit']",
+            "textFilter": [
+              "Zapisz",
+              "Potwierdź",
+              "Zatwierdź",
+              "Save",
+              "Confirm",
+              "Apply",
+              "Done"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "INFOR consent": {
+    "detectors": [
+      {
+        "presentMatcher": {
+          "type": "url",
+          "url": [
+            "^https?://(?:www\\.)?infor\\.pl(?:/|$)"
+          ],
+          "regexp": true
+        },
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "[role='dialog'], [aria-modal='true'], [class*='cookie'], [id*='cookie'], [class*='consent'], [id*='consent']"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "parent": {
+                  "selector": "[role='dialog'], [aria-modal='true'], .modal, [class*='cookie'], [id*='cookie'], [class*='consent'], [id*='consent']"
+                },
+                "target": {
+                  "selector": "button, [role='button'], input[type='button'], input[type='submit']",
+                  "textFilter": [
+                    "Odrzuć",
+                    "Odmów",
+                    "Reject",
+                    "Decline",
+                    "Deny",
+                    "Refuse",
+                    "Disallow",
+                    "No, thanks"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "parent": {
+            "selector": "[role='dialog'], [aria-modal='true'], .modal, [class*='cookie'], [id*='cookie'], [class*='consent'], [id*='consent']"
+          },
+          "target": {
+            "selector": "button, [role='button'], input[type='button'], input[type='submit']",
+            "textFilter": [
+              "Zapisz",
+              "Potwierdź",
+              "Zatwierdź",
+              "Save",
+              "Confirm",
+              "Apply",
+              "Done"
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

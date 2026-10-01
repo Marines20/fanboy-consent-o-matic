@@ -1,0 +1,488 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cavi-au/Consent-O-Matic/master/rules.schema.json",
+  "Borlabs Cookie (international specific)": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": [
+              "emondo.de",
+              "seduction-magazin.de",
+              "bajs.zagreb.hr"
+            ]
+          },
+          {
+            "type": "css",
+            "target": {
+              "selector": "#BorlabsCookieBox"
+            }
+          }
+        ],
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "#BorlabsCookieBox"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "._brlbs-refuse-btn a"
+          }
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "#CookieBoxSaveButton"
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "CCM19 (international specific)": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": [
+              "ccm19.atradior.de",
+              "epccm19.com",
+              "kefalonia-griechenland.com",
+              "mindpark.at"
+            ]
+          },
+          {
+            "type": "css",
+            "target": {
+              "selector": ".ccm-root"
+            }
+          }
+        ],
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": ".ccm-root"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": ".ccm-root button",
+            "textFilter": [
+              "Ablehnen",
+              "Reject",
+              "Decline",
+              "Refuse"
+            ]
+          }
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": ".ccm-root button",
+            "textFilter": [
+              "Speichern",
+              "Save settings",
+              "Save"
+            ]
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "tarteaucitron (RATP)": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": [
+              "ratp.fr"
+            ]
+          },
+          {
+            "type": "css",
+            "target": {
+              "selector": "#tarteaucitron"
+            }
+          }
+        ],
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "#tarteaucitron"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "#tarteaucitronAllDenied"
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "Cookie Law Info (international specific)": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": [
+              "krookmedia.fi",
+              "pirkkalainen.fi",
+              "ok-salute.it"
+            ]
+          },
+          {
+            "type": "css",
+            "target": {
+              "selector": "#cookie-law-info-bar"
+            }
+          }
+        ],
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "#cookie-law-info-bar"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "#wt-cli-reject-btn, .wt-cli-reject-btn"
+          }
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "#wt-cli-accept-btn, .wt-cli-accept-btn"
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "Gravito CMP (international specific)": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": [
+              "veho.fi"
+            ]
+          },
+          {
+            "type": "css",
+            "target": {
+              "selector": ".gravitoCcpaCmp-card"
+            }
+          }
+        ],
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": ".gravitoCcpaCmp-card"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": ".gravitoCcpaCmp-card button",
+            "textFilter": [
+              "Reject all",
+              "Reject",
+              "Deny",
+              "Decline"
+            ]
+          }
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": ".gravitoCcpaCmp-card button",
+            "textFilter": [
+              "Save",
+              "Confirm",
+              "Done"
+            ]
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "Efilli CMP (international specific)": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": [
+              "karaca.com"
+            ]
+          },
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"efilli\"], [class*=\"efilli\"]"
+            }
+          }
+        ],
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "[id*=\"efilli\"], [class*=\"efilli\"]"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "button",
+            "textFilter": [
+              "Reject all",
+              "Reject",
+              "Decline",
+              "Deny"
+            ]
+          }
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "button",
+            "textFilter": [
+              "Save",
+              "Confirm",
+              "Done"
+            ]
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "ConsentManager.net (FLVW)": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": [
+              "flvw.de"
+            ]
+          },
+          {
+            "type": "css",
+            "target": {
+              "selector": "#cmpbox"
+            }
+          }
+        ],
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "#cmpbox"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "#cmpwelcomebtnno a"
+          }
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "#cmpwelcomebtnyes a"
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "OneTrust IAB / RodoGuard (Gazeta)": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": [
+              "gazeta.pl"
+            ]
+          },
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*=\"onetrust\"], [class*=\"onetrust\"]"
+            }
+          }
+        ],
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "[id*=\"onetrust\"], [class*=\"onetrust\"]"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "#onetrust-reject-all-handler, .onetrust-close-btn-handler"
+          }
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "#onetrust-accept-btn-handler"
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "Cookie consent (Allegro specific)": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": [
+              "allegro.pl"
+            ]
+          },
+          {
+            "type": "css",
+            "target": {
+              "selector": "[class*=\"rodo-consent\"], [class*=\"consent-modal\"]"
+            }
+          }
+        ],
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "[class*=\"rodo-consent\"], [class*=\"consent-modal\"]"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "button",
+            "textFilter": [
+              "Odrzuć",
+              "Odmów",
+              "Reject",
+              "Decline",
+              "Nie zgadzam się"
+            ]
+          }
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "button",
+            "textFilter": [
+              "Zapisz",
+              "Save",
+              "Potwierdź",
+              "Confirm"
+            ]
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  }
+}
