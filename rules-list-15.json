@@ -1,0 +1,1003 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cavi-au/Consent-O-Matic/master/rules.schema.json",
+  "OneTrust – 20min.ch": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "#onetrust-consent-sdk"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "#onetrust-consent-sdk"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "trueAction": {
+                "type": "click",
+                "target": {
+                  "selector": "#onetrust-consent-sdk button.ot-pc-refuse-all-handler"
+                }
+              },
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "#onetrust-consent-sdk button.ot-pc-refuse-all-handler"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "Usercentrics – Hornbach": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "#usercentrics-cmp-ui"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "#usercentrics-cmp-ui"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "trueAction": {
+                "type": "click",
+                "target": {
+                  "selector": "#usercentrics-cmp-ui button.uc-deny-button"
+                }
+              },
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "#usercentrics-cmp-ui button.uc-deny-button"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "Borlabs Cookie – NV Allesbestens": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "#BorlabsCookieBox"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "#BorlabsCookieBox"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "trueAction": {
+                "type": "click",
+                "target": {
+                  "selector": "#BorlabsCookieBox ._brlbs-refuse-btn a"
+                }
+              },
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "#BorlabsCookieBox ._brlbs-refuse-btn a"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "CookieYes – Glow Festival": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": ".cky-consent-container"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": ".cky-consent-container"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "trueAction": {
+                "type": "click",
+                "target": {
+                  "selector": ".cky-btn-reject"
+                }
+              },
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": ".cky-btn-reject"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "Cookiebot – Wells": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "#CybotCookiebotDialog"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "#CybotCookiebotDialog"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "trueAction": {
+                "type": "click",
+                "target": {
+                  "selector": "#CybotCookiebotDialogBodyButtonDecline"
+                }
+              },
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "#CybotCookiebotDialogBodyButtonDecline"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "Cookiebot – DSK Direct": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "#CybotCookiebotDialog"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "#CybotCookiebotDialog"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "trueAction": {
+                "type": "click",
+                "target": {
+                  "selector": "#CybotCookiebotDialogBodyButtonDecline"
+                }
+              },
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "#CybotCookiebotDialogBodyButtonDecline"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "ConsentManager – HRT": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "#cmpbox"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "#cmpbox"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "trueAction": {
+                "type": "click",
+                "target": {
+                  "selector": "a.cmpboxbtnno"
+                }
+              },
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "a.cmpboxbtnno"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "Fides – WeTransfer": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": ".fides-consent-wall"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": ".fides-consent-wall"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "trueAction": {
+                "type": "click",
+                "target": {
+                  "selector": ".fides-reject-all-button"
+                }
+              },
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": ".fides-reject-all-button"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "Sourcepoint – Standard": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id^='sp_message_container']"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id^='sp_message_container']"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "trueAction": {
+                "type": "click",
+                "target": {
+                  "selector": ".sp_choice_type_12[title='REJECT ALL'], [title='REJECT ALL']"
+                }
+              },
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": ".sp_choice_type_12[title='REJECT ALL'], [title='REJECT ALL']"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "Sourcepoint – Independent": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id^='sp_message_container']"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id^='sp_message_container']"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "trueAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button.sp_choice_type_11"
+                }
+              },
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button.sp_choice_type_11"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "Sourcepoint – Bloomberg": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id^='sp_message_container']"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id^='sp_message_container']"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "trueAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button.sp_choice_type_11, [title='Reject All']"
+                }
+              },
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button.sp_choice_type_11, [title='Reject All']"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "Cookie Information – Ecco": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*='cookie']"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[id*='cookie']"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "trueAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button[onclick='CookieInformation.declineAllCategories()']"
+                }
+              },
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button[onclick='CookieInformation.declineAllCategories()']"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "Pixelmate – Fitness Food Corner": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[class*='pixelmate']"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[class*='pixelmate']"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "trueAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button.pixelmate-general-deny"
+                }
+              },
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button.pixelmate-general-deny"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "Cookie banner – Kuehlungsborn": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[class*='cookie']"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[class*='cookie']"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "trueAction": {
+                "type": "click",
+                "target": {
+                  "selector": "a.mmcm-btn-decline"
+                }
+              },
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "a.mmcm-btn-decline"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "FS Consent – GetRoots": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[fs-consent-element]"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "[fs-consent-element]"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "trueAction": {
+                "type": "click",
+                "target": {
+                  "selector": "a[fs-consent-element='deny']"
+                }
+              },
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "a[fs-consent-element='deny']"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "Cookie banner – Effectiefgeven": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "#btn-reject-all"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "#btn-reject-all"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "trueAction": {
+                "type": "click",
+                "target": {
+                  "selector": "#btn-reject-all"
+                }
+              },
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "#btn-reject-all"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "Cookie banner – Northcoast": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "#btn-reject-all"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "#btn-reject-all"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "trueAction": {
+                "type": "click",
+                "target": {
+                  "selector": "#btn-reject-all"
+                }
+              },
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "#btn-reject-all"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "Cookie banner – ChainGPT": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "#btn-reject-all"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "#btn-reject-all"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "trueAction": {
+                "type": "click",
+                "target": {
+                  "selector": "#btn-reject-all"
+                }
+              },
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "#btn-reject-all"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "Cookie banner – Thomann": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "button.js-decline-all-cookies"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "button.js-decline-all-cookies"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "trueAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button.js-decline-all-cookies"
+                }
+              },
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button.js-decline-all-cookies"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "Cookie banner – Central BB": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "button[title='Alle ablehnen']"
+            }
+          }
+        ],
+        "showingMatcher": [
+          {
+            "type": "css",
+            "target": {
+              "selector": "button[title='Alle ablehnen']"
+            }
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "trueAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button[title='Alle ablehnen']"
+                }
+              },
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button[title='Alle ablehnen']"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "HIDE_CMP"
+      }
+    ]
+  }
+}
