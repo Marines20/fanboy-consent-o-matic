@@ -1,0 +1,1331 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cavi-au/Consent-O-Matic/master/rules.schema.json",
+  "EasyList Cookie Block - explicit domain cosmosdirekt.de": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": "^https?://(?:www\\.)?cosmosdirekt\\.de(?:/|$)",
+            "regexp": true
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "EasyList Cookie Block - explicit domain boursorama.com": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": "^https?://(?:www\\.)?boursorama\\.com(?:/|$)",
+            "regexp": true
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "EasyList Cookie Block - explicit domain stihl.fr": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": "^https?://(?:www\\.)?stihl\\.fr(?:/|$)",
+            "regexp": true
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "EasyList Cookie Block - explicit domain konzum.hr": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": "^https?://(?:www\\.)?konzum\\.hr(?:/|$)",
+            "regexp": true
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "EasyList Cookie Block - explicit domain katarina-line.com": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": "^https?://(?:www\\.)?katarina\\-line\\.com(?:/|$)",
+            "regexp": true
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "EasyList Cookie Block - explicit domain en.mapy.cz": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": "^https?://(?:www\\.)?en\\.mapy\\.cz(?:/|$)",
+            "regexp": true
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "EasyList Cookie Block - explicit domain mapy.com": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": "^https?://(?:www\\.)?mapy\\.com(?:/|$)",
+            "regexp": true
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "EasyList Cookie Block - explicit domain elisa.fi": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": "^https?://(?:www\\.)?elisa\\.fi(?:/|$)",
+            "regexp": true
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "EasyList Cookie Block - explicit domain veho.fi": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": "^https?://(?:www\\.)?veho\\.fi(?:/|$)",
+            "regexp": true
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "EasyList Cookie Block - explicit domain krookmedia.fi": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": "^https?://(?:www\\.)?krookmedia\\.fi(?:/|$)",
+            "regexp": true
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "EasyList Cookie Block - explicit domain kotitesti.fi": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": "^https?://(?:www\\.)?kotitesti\\.fi(?:/|$)",
+            "regexp": true
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "EasyList Cookie Block - explicit domain lamoda.by": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": "^https?://(?:www\\.)?lamoda\\.by(?:/|$)",
+            "regexp": true
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "EasyList Cookie Block - explicit domain lamoda.kz": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": "^https?://(?:www\\.)?lamoda\\.kz(?:/|$)",
+            "regexp": true
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "EasyList Cookie Block - explicit domain lamoda.ru": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": "^https?://(?:www\\.)?lamoda\\.ru(?:/|$)",
+            "regexp": true
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "EasyList Cookie Block - explicit domain formulatv.com": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": "^https?://(?:www\\.)?formulatv\\.com(?:/|$)",
+            "regexp": true
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "EasyList Cookie Block - explicit domain computrabajo.com": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": "^https?://(?:www\\.)?computrabajo\\.com(?:/|$)",
+            "regexp": true
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "button, [role=\"button\"], input[type=\"button\"], input[type=\"submit\"], a",
+                  "textFilter": [
+                    "Reject all",
+                    "Reject All",
+                    "Reject",
+                    "Decline all",
+                    "Decline All",
+                    "Decline",
+                    "Deny all",
+                    "Deny All",
+                    "Deny",
+                    "Refuse all",
+                    "Refuse All",
+                    "Refuse",
+                    "Disallow all",
+                    "Disallow All",
+                    "Do not accept",
+                    "Do Not Accept",
+                    "Do not consent",
+                    "Do Not Consent",
+                    "No, thanks",
+                    "No thanks",
+                    "Odrzuć wszystko",
+                    "Odrzuć Wszystko",
+                    "Odrzuć",
+                    "Odmów wszystkim",
+                    "Odmów Wszystkim",
+                    "Odmów",
+                    "Nie akceptuję",
+                    "Nie Akceptuję",
+                    "Nie wyrażam zgody",
+                    "Nie Wyrażam Zgody",
+                    "Nie zgadzam się",
+                    "Nie Zgadzam się",
+                    "Nie, dziękuję",
+                    "Nie dzięki",
+                    "Tout refuser",
+                    "Refuser tout",
+                    "Refuser",
+                    "Alle ablehnen",
+                    "Ablehnen",
+                    "Rechazar todo",
+                    "Rechazar",
+                    "Rifiuta tutto",
+                    "Rifiuta",
+                    "Recusar tudo",
+                    "Recusar",
+                    "Afwijzen",
+                    "Alles afwijzen"
+                  ],
+                  "displayFilter": true,
+                  "openInTab": false
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

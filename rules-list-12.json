@@ -1,0 +1,641 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cavi-au/Consent-O-Matic/master/rules.schema.json",
+  "Borlabs Cookie - emondo.de": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": "^https?://(?:www\\.)?emondo\\.de(?:/|$)",
+            "regexp": true
+          }
+        ],
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "#BorlabsCookieBox"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "#BorlabsCookieBox ._brlbs-refuse-btn a"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "#CookieBoxSaveButton"
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP",
+        "action": {
+          "type": "hide",
+          "target": {
+            "selector": "#BorlabsCookieBox"
+          }
+        }
+      }
+    ]
+  },
+  "Borlabs Cookie - seduction-magazin.de": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": "^https?://(?:www\\.)?seduction\\-magazin\\.de(?:/|$)",
+            "regexp": true
+          }
+        ],
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "#BorlabsCookieBox"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "#BorlabsCookieBox ._brlbs-refuse-btn a"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "#CookieBoxSaveButton"
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP",
+        "action": {
+          "type": "hide",
+          "target": {
+            "selector": "#BorlabsCookieBox"
+          }
+        }
+      }
+    ]
+  },
+  "Borlabs Cookie - bajs.zagreb.hr": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": "^https?://(?:www\\.)?bajs\\.zagreb\\.hr(?:/|$)",
+            "regexp": true
+          }
+        ],
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "#BorlabsCookieBox"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "#BorlabsCookieBox ._brlbs-refuse-btn a"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "#CookieBoxSaveButton"
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP",
+        "action": {
+          "type": "hide",
+          "target": {
+            "selector": "#BorlabsCookieBox"
+          }
+        }
+      }
+    ]
+  },
+  "CookieYes / Cookie Law Info - krookmedia.fi": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": "^https?://(?:www\\.)?krookmedia\\.fi(?:/|$)",
+            "regexp": true
+          }
+        ],
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "#cookie-law-info-bar"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": ".wt-cli-reject-btn"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "HIDE_CMP",
+        "action": {
+          "type": "hide",
+          "target": {
+            "selector": "#cookie-law-info-bar"
+          }
+        }
+      }
+    ]
+  },
+  "CookieYes / Cookie Law Info - pirkkalainen.fi": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": "^https?://(?:www\\.)?pirkkalainen\\.fi(?:/|$)",
+            "regexp": true
+          }
+        ],
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "#cookie-law-info-bar"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": ".wt-cli-reject-btn"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "HIDE_CMP",
+        "action": {
+          "type": "hide",
+          "target": {
+            "selector": "#cookie-law-info-bar"
+          }
+        }
+      }
+    ]
+  },
+  "CookieYes / Cookie Law Info - ok-salute.it": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": "^https?://(?:www\\.)?ok\\-salute\\.it(?:/|$)",
+            "regexp": true
+          }
+        ],
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "#cookie-law-info-bar"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": ".wt-cli-reject-btn"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "HIDE_CMP",
+        "action": {
+          "type": "hide",
+          "target": {
+            "selector": "#cookie-law-info-bar"
+          }
+        }
+      }
+    ]
+  },
+  "OneTrust - elisa.fi": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": "^https?://(?:www\\.)?elisa\\.fi(?:/|$)",
+            "regexp": true
+          }
+        ],
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "#onetrust-banner-sdk"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "#onetrust-reject-all-handler"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "#onetrust-pc-sdk > div.ot-pc-footer > div.ot-btn-container > button"
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP",
+        "action": {
+          "type": "hide",
+          "target": {
+            "selector": "#onetrust-banner-sdk"
+          }
+        }
+      }
+    ]
+  },
+  "OneTrust - gazeta.pl": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": "^https?://(?:www\\.)?gazeta\\.pl(?:/|$)",
+            "regexp": true
+          }
+        ],
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "#onetrust-banner-sdk"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "#onetrust-reject-all-handler"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SAVE_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "#onetrust-pc-sdk > div.ot-pc-footer > div.ot-btn-container > button"
+          }
+        }
+      },
+      {
+        "name": "HIDE_CMP",
+        "action": {
+          "type": "hide",
+          "target": {
+            "selector": "#onetrust-banner-sdk"
+          }
+        }
+      }
+    ]
+  },
+  "tarteaucitron - ratp.fr": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": "^https?://(?:www\\.)?ratp\\.fr(?:/|$)",
+            "regexp": true
+          }
+        ],
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "#tarteaucitronRoot"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "#tarteaucitronAllDenied"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "HIDE_CMP",
+        "action": {
+          "type": "hide",
+          "target": {
+            "selector": "#tarteaucitronRoot"
+          }
+        }
+      }
+    ]
+  },
+  "Gravito CMP - veho.fi": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": "^https?://(?:www\\.)?veho\\.fi(?:/|$)",
+            "regexp": true
+          }
+        ],
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": ".gravitoCcpaCmp-card"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": ".gravitoCcpaCmp-btn-container button",
+                  "textFilter": [
+                    "Reject",
+                    "Decline",
+                    "Deny",
+                    "Refuse",
+                    "Reddet",
+                    "Ablehnen",
+                    "Odmów",
+                    "Redd"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "HIDE_CMP",
+        "action": {
+          "type": "hide",
+          "target": {
+            "selector": ".gravitoCcpaCmp-card"
+          }
+        }
+      }
+    ]
+  },
+  "CCM19 - mindpark.at": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": "^https?://(?:www\\.)?mindpark\\.at(?:/|$)",
+            "regexp": true
+          }
+        ],
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": ".ccm-root"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": ".ccm-root button",
+                  "textFilter": [
+                    "Reject",
+                    "Decline",
+                    "Deny",
+                    "Refuse",
+                    "Ablehnen",
+                    "Odmów",
+                    "Ablehnen",
+                    "Verweigern"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "HIDE_CMP",
+        "action": {
+          "type": "hide",
+          "target": {
+            "selector": ".ccm-root"
+          }
+        }
+      }
+    ]
+  },
+  "Efilli - karaca.com": {
+    "detectors": [
+      {
+        "presentMatcher": [
+          {
+            "type": "url",
+            "url": "^https?://(?:www\\.)?karaca\\.com(?:/|$)",
+            "regexp": true
+          }
+        ],
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "[id*=\"efilli\" i], [class*=\"efilli\" i]"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "consent",
+          "consents": [
+            {
+              "type": "F",
+              "falseAction": {
+                "type": "click",
+                "target": {
+                  "selector": "[id*=\"efilli\" i] button, [class*=\"efilli\" i] button",
+                  "textFilter": [
+                    "Reject",
+                    "Decline",
+                    "Deny",
+                    "Refuse",
+                    "Reddet",
+                    "Reddet Hepsini",
+                    "Tümünü Reddet"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "HIDE_CMP",
+        "action": {
+          "type": "hide",
+          "target": {
+            "selector": "[id*=\"efilli\" i], [class*=\"efilli\" i]"
+          }
+        }
+      }
+    ]
+  }
+}
