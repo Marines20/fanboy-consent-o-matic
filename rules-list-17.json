@@ -1,0 +1,456 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cavi-au/Consent-O-Matic/master/rules.schema.json",
+  "Cookiebot – Settings": {
+    "detectors": [
+      {
+        "presentMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "#CybotCookiebotDialog"
+          }
+        },
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "#CybotCookiebotDialog"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "OPEN_OPTIONS",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "#CybotCookiebotDialogBodyLevelButtonCustomize, #CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll",
+            "textFilter": [
+              "Customize",
+              "Customize settings",
+              "Manage cookies",
+              "Cookie settings"
+            ]
+          }
+        }
+      },
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "#CybotCookiebotDialogBodyButtonDecline, #CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll"
+          }
+        }
+      }
+    ]
+  },
+  "OneTrust – Settings": {
+    "detectors": [
+      {
+        "presentMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "#onetrust-consent-sdk"
+          }
+        },
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "#onetrust-consent-sdk"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "OPEN_OPTIONS",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "#onetrust-pc-btn-handler"
+          }
+        }
+      },
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "#onetrust-pc-sdk .ot-pc-refuse-all-handler, #onetrust-pc-sdk #onetrust-reject-all-handler"
+          }
+        }
+      }
+    ]
+  },
+  "Usercentrics – Settings": {
+    "detectors": [
+      {
+        "presentMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "#usercentrics-root"
+          }
+        },
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "#usercentrics-root"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "OPEN_OPTIONS",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "button, [role='button'], a",
+            "textFilter": [
+              "Settings",
+              "Manage settings",
+              "More information",
+              "Privacy settings"
+            ]
+          }
+        }
+      },
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "uc-deny-all-button, [data-testid='uc-deny-all-button'], button, [role='button']",
+            "textFilter": [
+              "Deny all",
+              "Reject all",
+              "Decline all",
+              "Do not accept",
+              "Odrzuć wszystko",
+              "Odmów wszystkim"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "Sourcepoint – Settings": {
+    "detectors": [
+      {
+        "presentMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "[id^='sp_message_container'], .message-container"
+          }
+        },
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "[id^='sp_message_container'], .message-container"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "OPEN_OPTIONS",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": ".sp_choice_type_12[title='Options'], [title='Options']"
+          }
+        }
+      },
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": ".sp_choice_type_11, [title='REJECT ALL']"
+          }
+        }
+      }
+    ]
+  },
+  "TrustArc – Settings": {
+    "detectors": [
+      {
+        "presentMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "#truste-consent-content, .truste-consent-content, #truste-consent-track"
+          }
+        },
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "#truste-consent-content, .truste-consent-content, #truste-consent-track"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "OPEN_OPTIONS",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "#truste-show-consent"
+          }
+        }
+      },
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "#truste-consent-required"
+          }
+        }
+      }
+    ]
+  },
+  "Quantcast – Settings": {
+    "detectors": [
+      {
+        "presentMatcher": {
+          "type": "css",
+          "target": {
+            "selector": ".qc-cmp2-container, #qc-cmp2-container"
+          }
+        },
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": ".qc-cmp2-container, #qc-cmp2-container"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "OPEN_OPTIONS",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "button, [role='button']",
+            "textFilter": [
+              "Manage options",
+              "Manage choices",
+              "Privacy settings",
+              "Options",
+              "Settings"
+            ]
+          }
+        }
+      },
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": ".qc-cmp2-summary-buttons button[mode='secondary'], .qc-cmp2-button[data-testid='reject-all']"
+          }
+        }
+      }
+    ]
+  },
+  "Klaro – Settings": {
+    "detectors": [
+      {
+        "presentMatcher": {
+          "type": "css",
+          "target": {
+            "selector": ".klaro"
+          }
+        },
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": ".klaro"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "OPEN_OPTIONS",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "button, [role='button'], a",
+            "textFilter": [
+              "Settings",
+              "Customize",
+              "Manage preferences",
+              "Preferences"
+            ]
+          }
+        }
+      },
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": ".cm-btn-danger",
+            "textFilter": [
+              "Reject all",
+              "Deny all",
+              "Decline all",
+              "Refuse all"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "Didomi – Settings": {
+    "detectors": [
+      {
+        "presentMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "#didomi-host, #didomi-notice"
+          }
+        },
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "#didomi-host, #didomi-notice"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "OPEN_OPTIONS",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "button, [role='button'], a",
+            "textFilter": [
+              "Learn more",
+              "More information",
+              "Manage preferences",
+              "Privacy settings"
+            ]
+          }
+        }
+      },
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "#didomi-notice-disagree-button, #didomi-host button",
+            "textFilter": [
+              "Disagree to all",
+              "Reject all",
+              "Decline all",
+              "Odmów wszystkim"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "iubenda – Settings": {
+    "detectors": [
+      {
+        "presentMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "#iubenda-cs-banner, .iubenda-cs-container"
+          }
+        },
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "#iubenda-cs-banner, .iubenda-cs-container"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "OPEN_OPTIONS",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "button, [role='button'], a",
+            "textFilter": [
+              "Customize",
+              "Manage preferences",
+              "Preferences",
+              "Settings",
+              "Cookie settings"
+            ]
+          }
+        }
+      },
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": ".iubenda-cs-reject-btn"
+          }
+        }
+      }
+    ]
+  },
+  "Complianz – Settings": {
+    "detectors": [
+      {
+        "presentMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "#cmplz-cookiebanner-container, .cmplz-cookiebanner"
+          }
+        },
+        "showingMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "#cmplz-cookiebanner-container, .cmplz-cookiebanner"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "OPEN_OPTIONS",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": ".cmplz-view-preferences, button, [role='button'], a",
+            "textFilter": [
+              "View preferences",
+              "Preferences",
+              "Cookie settings",
+              "Settings",
+              "Ustawienia cookies"
+            ]
+          }
+        }
+      },
+      {
+        "name": "DO_CONSENT",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": ".cmplz-btn.cmplz-deny, .cmplz-deny",
+            "textFilter": [
+              "Deny",
+              "Deny all",
+              "Reject",
+              "Reject all",
+              "Odrzuć",
+              "Odrzuć wszystko"
+            ]
+          }
+        }
+      }
+    ]
+  }
+}
